@@ -20,7 +20,7 @@ git clone https://github.com/vivacoraje/chase.git
 ### client
 (可省略)
 ```
-cd client/chase
+cd chase/client/chase
 yarn install
 yarn dev
 ```
@@ -46,7 +46,7 @@ CHASE_CONFIG=development
 
 须安装Docker和docker-compose
 ```
-cd backend
+cd chase/backend
 make docker
 ```
 
