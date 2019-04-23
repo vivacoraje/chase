@@ -1,0 +1,3 @@
+worker: celery worker --app=app.tasks.celery
+beat: celery beat --app=app.tasks.celery -S app.scheduler.MyRedisScheduler
+web: gunicorn wsgi:application --log-file -

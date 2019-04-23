@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - '6379:6379'
+  
+  mysql:
+    build: ./mysql
+    ports: 
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+  
+  web:
+    build: .
+    env_file: .env
+    command: >
+      gunicorn -b 0.0.0.0:5000
+        --access-logfile -
+        --reload
+        "wsgi:application"
+    ports:
+      - '5000:5000'
+    depends_on:
+      - redis
+      - mysql
+  
+  celeryworker:
+    build: .
+    env_file: .env
+    command: celery worker -A app.tasks.celery -l info
+    depends_on:
+      - redis
+      - mysql
+  
+  celerybeat:
+    build: .
+    env_file: .env
+    command: celery beat -A app.tasks.celery -S app.scheduler.MyRedisScheduler -l info
+    depends_on:
+      - redis
+      - mysql
