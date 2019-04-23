@@ -6,7 +6,7 @@
 
 - 前后端分离。
 
-- 一个电视剧，对应一个订阅，对应一个定时任务。
+- 一部电视剧，对应一个订阅，对应一个定时任务。
 
 - 针对电视剧的更新规律，调整定时任务的调度规则，电视剧完结后任务将被停止。
 - 从四个不同网站（豆瓣电影，IMDB， ziziyy，loldytt）抓取关键信息。（其中loldytt容易崩溃和封锁IP，未实装）
@@ -18,7 +18,7 @@ git clone
 ```
 
 ### client
-
+(可省略)
 ```
 cd client/kura
 yarn install
@@ -54,7 +54,7 @@ make docker
 
 - 本机
 [localhost:5000](http://localhost:5000)
-[localhost:808*](http://localhost:8080)
+[localhost:808*](http://localhost:8080)(未省略`#client`)
 
 - heroku
 [chase](https://powerful-sands-58878.herokuapp.com/)
