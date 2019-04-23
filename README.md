@@ -14,15 +14,15 @@
 # 运行
 
 ```
-git clone https://github.com/vivacoraje/chase.git
+> git clone https://github.com/vivacoraje/chase.git
 ```
 
 ### client
 (可省略)
 ```
-cd chase/client/chase
-yarn install
-yarn dev
+> cd chase/client/chase
+> yarn install
+> yarn dev
 ```
 
 ### backend
@@ -46,8 +46,8 @@ CHASE_CONFIG=development
 
 须安装Docker和docker-compose
 ```
-cd chase/backend
-make docker
+> cd chase/backend
+> make docker
 ```
 
 # 访问
