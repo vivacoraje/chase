@@ -1,6 +1,6 @@
 # Chase
 
-搜索你喜爱的电视剧，点击订阅，chase帮你收集剧集的播放地址和下载地址，更新时向你发来提醒邮件。[backend]()基于Python3.6，Flask，MySQL，Celery。[frontend]()基于vue，ant-design-vue
+搜索你喜爱的电视剧，点击订阅，chase帮你收集剧集的播放地址和下载地址，更新时向你发来提醒邮件。[backend](https://github.com/vivacoraje/chase/tree/master/backend)基于Python3.6，Flask，MySQL，Celery。[frontend](frontend/chase)基于vue，ant-design-vue
 
 # 特性
 
@@ -14,13 +14,13 @@
 # 运行
 
 ```
-git clone
+git clone https://github.com/vivacoraje/chase.git
 ```
 
 ### client
 (可省略)
 ```
-cd client/kura
+cd client/chase
 yarn install
 yarn dev
 ```
