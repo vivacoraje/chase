@@ -92,4 +92,4 @@ Via: 1.1 vegur
 ```
 
 # db model
-![db model](https://github.com/vivacoraje/chase/images/chase.tiff)
+![db model](https://github.com/vivacoraje/chase/blob/master/images/chase.tiff)
