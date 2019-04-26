@@ -58,3 +58,38 @@ CHASE_CONFIG=development
 
 - heroku
 [chase](https://powerful-sands-58878.herokuapp.com/)
+
+# RESTful API
+```
+> http https://powerful-sands-58878.herokuapp.com/api/s
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Length: 432
+Content-Type: application/json
+Date: Fri, 26 Apr 2019 12:41:49 GMT
+Server: gunicorn/19.9.0
+Via: 1.1 vegur
+
+[
+    "/api/movies",
+    "/api/movies/<id>",
+    "/api/ping",
+    "/api/search",
+    "/api/search/recently",
+    "/api/search/stats",
+    "/api/subscriptions",
+    "/api/subscriptions/<username>",
+    "/api/subscriptions/<username>/<sub_id>",
+    "/api/tasks",
+    "/api/tasks/<path:task_name>",
+    "/api/tokens",
+    "/api/users",
+    "/api/users/<username>",
+    "/api/videos/<username>/<video_id>",
+    "/api/videos/<username>/subs/<subs_id>"
+]
+```
+
+# db model
+![db model](https://github.com/vivacoraje/chase/images/chase.tiff)

@@ -1,4 +1,4 @@
-# kura
+# chase
 
 > A Vue.js project
 
