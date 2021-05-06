@@ -14,7 +14,7 @@ coverage==4.5.2
 cssselect==1.0.3
 Flask==1.0.2
 Flask-Admin==1.5.3
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 Flask-HTTPAuth==3.2.4
 Flask-Mail==0.9.1
 Flask-Migrate==2.4.0
